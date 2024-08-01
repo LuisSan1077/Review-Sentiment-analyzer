@@ -10,7 +10,7 @@ nltk.download('maxent_ne_chunker')
 nltk.download('words')
 
 # Load the CSV file with file path
-df = pd.read_csv("/Users/lgsan/Downloads/Amazon_Reviews_Exporter_B00EZP4S86_2024_7_4_11_48_45.csv")
+df = pd.read_csv()
 
 # Sentiment Analyzer Initialization
 sia = SentimentIntensityAnalyzer()
