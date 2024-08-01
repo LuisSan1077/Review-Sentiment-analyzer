@@ -41,6 +41,11 @@ vaders = vaders.merge(df, how='left', on='id')
 print(res)
 print(vaders[['id', 'compound']])
 
+# Calculate and print the average compound score
+average_compound = vaders['compound'].mean()
+print(f"Average Compound Score: {average_compound}")
+
+
 # Plot for count of reviews by stars
 ax = df['rating'].value_counts().sort_index().plot(kind='bar', title='Count of Reviews by Stars', figsize=(10, 5))
 plt.xlabel('Star Rating')
