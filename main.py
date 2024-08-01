@@ -21,7 +21,7 @@ res = {}
 
 # Iteration over each row in the DataFrame
 for i, row in tqdm(df.iterrows(), total=len(df)):
-    text = str(row['title'])  # Convert the title to string
+    text = str(row['content'])  # Convert the title to string
     myid = row['id']
 
 
