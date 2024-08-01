@@ -37,6 +37,10 @@ vaders = vaders.reset_index().rename(columns={'index': 'id'})
 # Merging of the sentiment scores with the original DataFrame
 vaders = vaders.merge(df, how='left', on='id')
 
+# Calculate and print the average compound score
+average_compound = vaders['compound'].mean()
+print(f"Average Compound Score: {average_compound}")
+
 # Compound Score Display
 print(res)
 print(vaders[['id', 'compound']])
